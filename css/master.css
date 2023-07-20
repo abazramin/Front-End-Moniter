@@ -1,0 +1,134 @@
+:root {
+    --primary-Bright-color:hsl(12, 88%, 59%);
+    --primary-Bright-color-hover:hsl(12, 63%, 37%);
+    --second-Dark-Blue:hsl(228, 39%, 23%);
+    --Neutral-DarkGrayish-Blue:hsl(227, 12%, 61%);
+    --Very-Dark-Blue: hsl(233, 12%, 13%);
+    --Very-Pale-Red: hsl(13, 100%, 96%);
+    --Vary-Light-Gray: hsl(0, 0%, 98%);
+}
+body{
+    height: 100vh;
+    font-family: "Be Vietnam Pro" , sans-serif;
+    background-color: var(--Vary-Light-Gray);
+}
+.btn-main {
+    background-color: var(--primary-Bright-color);
+    color: var(--Vary-Light-Gray);
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.btn-main-one{
+    color: var(--primary-Bright-color);
+    background-color: var(--Vary-Light-Gray);
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.btn-main:hover{
+    background-color: var(--primary-Bright-color-hover);
+}
+/* Start Landing page */
+.landing {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background-image: url(../images/bg-simplify-section-desktop.svg);
+    background-size: cover;
+}
+@media (max-width:560px) {
+    
+    .landing .landing-box .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .landing .landing-box .text-content {
+        text-align: center;
+    }
+}
+/* End Landing page */
+/* Start About */
+.about{
+    position: relative;
+}
+.about .card {
+    background-color: var(--Vary-Light-Gray);
+    border: none;
+}
+@media (max-width:560px) {
+    .about .text-about {
+        width: 100%;
+        text-align: center;
+    }
+}
+.about .card > ul li {
+    
+}
+/* End About */
+/* Start Side */
+.side .card{
+    background-color: #eeebeb;
+}
+.side .card .info img {
+    width: 15%;
+    position: absolute;
+    left: 50%;
+    top: -35%;
+    transform: translate(-50% , 50%);
+}
+@media (max-width:1400px) {
+    .side   {
+    display: none;
+    }
+}
+/* End Side */
+/*Start  team  */
+.team {
+    background-color: var(--primary-Bright-color);
+}
+@media (max-width:560px) {
+    .team .content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .team .content .button {
+        padding-top: 20px;
+    }
+}
+/* End team */
+/* Start Footer */
+.footer{
+    background-color: var(--Very-Dark-Blue);
+}
+.footer .icons i {
+    font-size: 20px;
+    margin: 0 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer .icons i:hover{
+    color: var(--primary-Bright-color);
+}
+.footer .text-light ul li a:hover{
+    color: var(--primary-Bright-color);
+}
+.footer .form  .form-text {
+    color: var(--primary-Bright-color);
+}
+@media (max-width:560px) {
+    .footer .row {
+
+        display: flex;
+        text-align: center;
+        flex-direction: column-reverse;
+    }
+}
+/* End Footer */
+
+
+
